@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THRIVE 360 Fitness Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1>THRIVE 360</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Transform Your Body With Thrive 360</h2>
+            <p>Premium Fitness Club in Vadavalli, Coimbatore</p>
+            <a href="#contact" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+
+        <p>
+            Thrive 360 Fitness Club is one of the most premium gyms in Vadavalli,
+            Coimbatore. We provide modern workout equipment, certified trainers,
+            Zumba sessions, steam bath, ice bath recovery, and a motivating fitness environment.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-box">
+                <h3>Strength Training</h3>
+                <p>Build strength with modern equipment and expert guidance.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Zumba Classes</h3>
+                <p>Fun and energetic dance workouts for all fitness levels.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Steam Bath</h3>
+                <p>Relax and recover your body after intense workouts.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Personal Training</h3>
+                <p>One-on-one fitness coaching to achieve your goals faster.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <h2>Gym Gallery</h2>
+
+        <div class="gallery-container">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop"
+                alt="Gym Image">
+
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop"
+                alt="Gym Image">
+
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop"
+                alt="Gym Image">
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section class="plans">
+        <h2>Membership Plans</h2>
+
+        <div class="plan-container">
+
+            <!-- Basic Plan -->
+            <div class="plan-box" onclick="showPlan('basic')">
+                <h3>Basic</h3>
+                <p>Gym Access</p>
+                <h4>₹999/month</h4>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="plan-box" onclick="showPlan('premium')">
+                <h3>Premium</h3>
+                <p>All Facilities Included</p>
+                <h4>₹2499/month</h4>
+            </div>
+
+            <!-- Elite Plan -->
+            <div class="plan-box" onclick="showPlan('elite')">
+                <h3>Elite</h3>
+                <p>Personal Training + Recovery</p>
+                <h4>₹3999/month</h4>
+            </div>
+
+        </div>
+
+        <!-- Plan Details Box -->
+        <div class="plan-details" id="planDetails">
+
+            <h3 id="planTitle">Select a Plan</h3>
+
+            <ul id="planFeatures">
+                <li>Choose any membership plan to view features.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback">
+
+        <h2>Member Feedback</h2>
+
+        <form class="feedback-form">
+
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <textarea placeholder="Write Your Feedback" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Members Say</h2>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-box">
+                <p>
+                    "Excellent gym with modern equipment and supportive trainers."
+                </p>
+                <h4>- Saheena</h4>
+            </div>
+
+            <div class="testimonial-box">
+                <p>
+                    "Clean atmosphere and motivating workout environment."
+                </p>
+                <h4>- Nilofar</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+            <p><strong>Phone:</strong> +91 63837 78862</p>
+            <p><strong>Location:</strong> Vadavalli, Coimbatore</p>
+            <p><strong>Timings:</strong> Open till 10:30 PM</p>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.322647500148!2d76.9007737748094!3d11.014770154743401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859ddab000001%3A0x1111111111111111!2sTHRIVE%20360%20Fitness%20Club!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 THRIVE 360 Fitness Club | Designed by Future Interns Student</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
